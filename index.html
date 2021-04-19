@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>    
+    <p id="description">Survey for the hopper</p>
+    <div class="form-container">
+    <form action="submit" id="survey-form">
+        <div class="group">
+            <label for="name" id="name-label"> What is your name</label>
+            <input type="text" id="name" required placeholder="Enter a name">     
+        </div>
+        <div class="group">
+            <label for="email" id="email-label">Please Enter your email</label>
+            <input type="email" id="email" required placeholder="Enter an email" >
+        </div>
+        <div class="group">
+            <label for="number" id="number-label">enter your age</label>
+            <input class="num" type="number" id="number" required min="5" max="12" placeholder="Enter a number" >
+        </div>
+        <div class="group">
+            <p>What describe your goal</p>
+            <select class="form-container white" required name="brave" id="dropdown" placeholder="bom box">
+                <option disabled selected value name="one">Select goal</option>
+                <option name="two" value="player">player</option>
+                <option name="three" value="hopper">hopper</option>
+                <option name="four" value="king" >king</option>
+            </select>
+        </div>
+        <div class="group">
+            <p>What do you feel?</p>
+            <label class="feel" for="one"><input id="one" type="radio" value="three" name="four">boom</label>
+            <label class="feel" for="two"><input id="two" type="radio" value="three" name="four">flat</label>
+            <label class="feel" for="three"><input id="three" type="radio" value="three" name="four">calm</label>
+        </div>
+        <div class="group">
+            <p for="">Another feeling?</p>
+            <label class="feel" for=""><input id="crack" type="checkbox" value="three">crack</label>
+            <label class="feel" for=""><input id="puff" type="checkbox" value="three">puff</label>
+            <label class="feel" for=""><input id="stuffy" type="checkbox" value="three">stuffy</label>
+        </div>
+        <div class="group">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit" id="submit">submit</button>
+        </div>
+    </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
